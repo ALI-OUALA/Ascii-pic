@@ -1,0 +1,71 @@
+@import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+@import url("https://fonts.cdnfonts.com/css/thegoodmonolith");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-primary: "PP Neue Montreal", sans-serif;
+  --font-mono: "TheGoodMonolith", monospace;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased overflow-hidden selection:bg-white selection:text-black;
+}
+
+/* Custom Range Slider */
+input[type=range] {
+  @apply appearance-none bg-transparent cursor-pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  @apply h-1 bg-zinc-800 rounded-full transition-colors;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  @apply appearance-none w-4 h-4 bg-white rounded-full -mt-1.5 border-2 border-black transition-transform hover:scale-110;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  @apply bg-zinc-700;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  @apply bg-zinc-900/80 backdrop-blur-md border border-zinc-800/50;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 rounded-full hover:bg-zinc-700;
+}
+
+/* Text Glow Animation */
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+
+  50% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.hover-glow:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.4);
+}
