@@ -1,6 +1,9 @@
 # ASCII Art Generator
 
-A premium, web-based tool that transforms images into interactive ASCII art. Featuring a "Heat Reveal" effect, extensive customization controls, and high-quality export options.
+A modern, interactive image-to-ASCII converter built with React. Features real-time rendering, custom fonts & colors, and HTML/PNG export. Sleek, fast, and fully customizable.
+
+[**Live Demo**](https://ascii-pic.vercel.app/)
+
 
 ![Project Preview](https://via.placeholder.com/800x400?text=ASCII+Generator+Preview)
 
