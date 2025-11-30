@@ -5,14 +5,6 @@ A modern, interactive image-to-ASCII converter built with React. Features real-t
 [**Live Demo**](https://ascii-pic.vercel.app/)
 
 
-![Project Preview](https://via.placeholder.com/800x400?text=ASCII+Generator+Preview)
-
-## 🔗 Live Demo
-
-**[View Live Deployment](YOUR_DEPLOYMENT_URL_HERE)**
-
-> *Replace the link above with your actual deployment URL after hosting (e.g., on Vercel or Netlify).*
-
 ## ✨ Features
 
 - **Interactive Heat Reveal**: Hover over the ASCII art to reveal the original image in full color.
